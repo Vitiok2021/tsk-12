@@ -1394,7 +1394,6 @@ body.mouse .menu__list li:hover .menu__arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .3s ease 0s;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
   opacity: 0
@@ -1403,7 +1402,9 @@ body.mouse .menu__list li:hover .menu__arrow {
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   opacity: 1;
-  transition: all 1s ease .7s
+  transition: opacity 1s ease .7s,background-color .3s ease 0s,color .3s ease 0s,-webkit-transform 1s ease .7s;
+  transition: transform 1s ease .7s,opacity 1s ease .7s,background-color .3s ease 0s,color .3s ease 0s;
+  transition: transform 1s ease .7s,opacity 1s ease .7s,background-color .3s ease 0s,color .3s ease 0s,-webkit-transform 1s ease .7s
 }
 .kantoorinrichting-product__title {
   max-width: 67.1875rem;
@@ -1457,7 +1458,6 @@ body.mouse .menu__list li:hover .menu__arrow {
   padding: .5625rem .75rem;
   padding-left: 1.25rem;
   font-weight: 500;
-  transition: background-color .3s ease 0s;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
   opacity: 0
@@ -1474,7 +1474,9 @@ body.mouse .menu__list li:hover .menu__arrow {
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   opacity: 1;
-  transition: all 1s ease .7s
+  transition: opacity 1s ease .7s,background-color .3s ease 0s,-webkit-transform 1s ease .7s;
+  transition: transform 1s ease .7s,opacity 1s ease .7s,background-color .3s ease 0s;
+  transition: transform 1s ease .7s,opacity 1s ease .7s,background-color .3s ease 0s,-webkit-transform 1s ease .7s
 }
 .kantoorinrichting-product__images {
   position: relative
@@ -3272,7 +3274,7 @@ body.mouse .menu__list li:hover .menu__arrow {
     color: #000
   }
   .kantoorinrichting-product__button:hover {
-    background-color: #eee
+    background-color: #e4e3e3
   }
   .kantoorinrichting-product__image:hover img {
     -webkit-transform: scale(1.03);
